@@ -17,10 +17,6 @@ public class Server extends MatrixSolverImpl{
 
 
     public static void main(String[] args) {
-//        if (System.getSecurityManager() == null) {
-//            System.setSecurityManager( new SecurityManager());
-//
-//        }
         System.setProperty("java.rmi.server.hostname", "localhost");
         MatrixSolver solver = new MatrixSolverImpl();
 
@@ -33,10 +29,6 @@ public class Server extends MatrixSolverImpl{
         }
     }
 }
-
-
-
-
 class VectorGen implements Runnable {
     double[][] vc;
     boolean sR;
